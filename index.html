@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="./img/assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/assets/logo.ico" type="image/x-icon">
     <title>Lovefy - Web Player: Our Music for everyone</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/time.css">
@@ -25,13 +25,18 @@
         <div class="side-bar hide2">
 
             <div class="nav">
+                <div class="nav-option transition logo-img" style="opacity: 1;">
+                    <img class="logo-img" src="./img/assets/logo.png" alt="lib icon">
+                    <a class="hide" href="#">Lovefy Music</a>
+                </div>
+
                 <div class="nav-option transition" style="opacity: 1;">
-                    <i class="fa-solid fa-house pointer"></i>
+                    <i class="fa-solid fa-house pointer home"></i>
                     <a class="hide" href="#">Página Inicial</a>
                 </div>
 
                 <div class="nav-option transition hover">
-                    <i class="fa-solid fa-magnifying-glass pointer"></i>
+                    <i class="fa-solid fa-magnifying-glass pointer search"></i>
                     <a class="hide" href="#">Pesquisa</a>
                 </div>
             </div>
@@ -78,8 +83,10 @@
                         <img class="bell pointer hover transition hide2" src="./img/assets/backward_icon.png"
                             alt="Backward">
                         <img class="bell pointer hover transition hide" src="./img/assets/forward_icon.png" alt="forward">
-                        <div class="hero">
-                            <i class="fa-solid fa-house pointer hide hide3 visible"></i>
+
+                        <div class="logo pointer hide3 visible">
+                            <img class="logo-img" src="./img/assets/logo.png" alt="lib icon">
+                            <h3>Lovefy Music</h3>
                         </div>
                         <div class="hero hero2">
                             <i class="fa-solid fa-magnifying-glass pointer hide3 visible"></i>
@@ -87,17 +94,14 @@
                     </div>
 
                     <div class="right-part">
-                        <button class="badge pointer hide scale transition">Seja Premium no meu ❤️</button>
+                        <button class="badge pointer hide4 scale transition">Seja Premium no meu ❤️</button>
                         <div class="bell hover pointer transition margin">
                             <i class="fa-regular fa-bell scale"></i>
-                        </div>
-                        <div class="user pointer margin">
-                            <img src="./img/assets/letter-s.png" alt="user">
                         </div>
                     </div>
 
                 </div>
-
+                <br>
                 <div class="sticky-nav-boottom">
                     <button class="badge all pointer">Tudo</button>
                     <button class="badge badge3 transition pointer">Músicas</button>
@@ -106,12 +110,14 @@
 
             </div>
 
-            <h2 class="card-heading">Tocado Recentemente</h2>
+            <br>
             <div class="cards-container">
                 <div class="card pointer">
                     <img class="card-img" src="./img/assets/cover.png" alt="card image">
-                    <p class="card-title">A Nossa Melodia ❤️</p>
-                    <p class="card-info">Ariani & Rafael</p>
+                    <div class="font-center">
+                        <p class="card-title font-center">A Nossa Melodia</p>
+                        <p class="card-info font-center">Ariani & Rafael</p>
+                    </div>
                 </div>
                 <div class="card pointer">
                     <p class="card-info">
@@ -127,11 +133,11 @@
             <div class="cards-container">
                 <div class="card pointer">
                     <img class="card-img" src="./img/artists/ariani.jpeg" alt="card image">
-                    <p class="card-title">Ariani</p>
-                    <p class="card-info">
-                        <span id="idadeAriani">0</span> anos
-                         - Escorpião <br>
-                        <br>
+                    <p class="card-title font-center">Ariani Ferreira da Cruz</p>
+                    <p class="card-info font-center">
+                        <span id="idadeAriani">0</span> anos - Escorpião♏
+                    </p>
+                    <p class="card-info font-justify">
                         "Médica veterinária, forte e decidida, mas também doce e cuidadosa. <br>
                         Linda no jeito, no sorriso e no carinho com que cuida do mundo ao redor. <br>
                         Gosta de música, viagens, boas conversas, piadas inesperadas, filmes de heróis e de tudo que envolve vida. <br>
@@ -140,12 +146,12 @@
                 </div>
                 <div class="card pointer">
                     <img class="card-img" src="./img/artists/rafael.jpeg" alt="card image">
-                    <p class="card-title">Rafael</p>
-                   <p class="card-info">
-                        <span id="idadeRafael">0</span> anos
-                        - Áries <br>
-                        <br>
-                        "Programador de software, organizando códigos enquanto aprende a ler a vida com mais calma. <br>
+                    <p class="card-title font-center">Rafael Rodrigues de Souza</p>
+                    <p class="card-info font-center">
+                        <span id="idadeRafael">0</span> anos - Áries ♈
+                    </p>
+                   <p class="card-info font-justify">
+                        "Fiscal de loja, atento aos detalhes do dia a dia, enquanto aprende a ver a vida com mais calma. <br>
                         Brincalhão, intenso e atento, mas tranquilo diante das voltas que o mundo dá. <br>
                         Gosta de música, viagens, conversas profundas, piadas ruins e de sorrisos verdadeiros. <br>
                         Nessa música, ele chega como alegria e lealdade, intenso mas com um tipo raro de paz."
@@ -157,9 +163,9 @@
             <div class="cards-container">
                 <!-- 19/11/25 -->
                 <div class="card pointer">
-                    <img class="card-img" src="./img/timeline/19-11-25.jpeg" alt="card image">
-                    <p class="card-title">Primeiro Contato ✨</p>
-                    <p class="card-info">📆 <i>Novembro 19, 2025</i></p>
+                    <img class="card-img" src="./img/timeline/19-11-25.png" alt="card image">
+                    <p class="card-title font-center">Primeiro Contato ✨</p>
+                    <p class="card-info font-center">📆 <i>Novembro 19, 2025</i></p>
                     <p class="card-info">
                         "Aquele momento simples que, sem aviso nenhum, mudou tudo. <br>
                         Foi apenas uma conversa, uma mensagem, um instante quase comum — mas ali começou algo que nenhum de nós sabia explicar direito. <br>
@@ -170,10 +176,10 @@
 
                 <!-- 26/11/25 -->
                 <div class="card pointer">
-                    <img class="card-img" src="./img/timeline/26-11-25.jpeg" alt="card image">
+                    <img class="card-img" src="./img/timeline/26-11-25.png" alt="card image">
                     <p class="card-title">Conversas Frequentes ✉️</p>
-                    <p class="card-info">📆 <i>Novembro 26, 2025</i></p>
-                    <p class="card-info">
+                    <p class="card-info font-center">📆 <i>Novembro 26, 2025</i></p>
+                    <p class="card-info font-center">
                         "Existe um instante em que a troca de palavras começa a pulsar diferente. <br>
                         As conversas, antes raras, passaram a surgir como pequenas constelações ao longo do dia. <br>
                         Cada mensagem carregava um brilho silencioso, e o tempo entre uma notificação e outra foi diminuindo, como se nossos mundos tivessem encontrado o mesmo compasso. <br>
@@ -183,10 +189,10 @@
 
                 <!-- 02/12/25 -->
                 <div class="card pointer">
-                    <img class="card-img" src="./img/timeline/02-12-25.jpeg" alt="card image">
+                    <img class="card-img" src="./img/timeline/02-12-25.png" alt="card image">
                     <p class="card-title">Primeiro Encontro 😍</p>
-                    <p class="card-info">📆 <i>Dezembro 02, 2025</i></p>
-                    <p class="card-info">
+                    <p class="card-info font-center">📆 <i>Dezembro 02, 2025</i></p>
+                    <p class="card-info font-center">
                         "O primeiro encontro… também conhecido como: <br>
                         'Será que vai dar certo?' <br>
                         'Será que ela vai notar que eu tô nervoso?' <br>
@@ -200,9 +206,9 @@
            
                 <!-- 07/12/25 -->
                 <div class="card pointer">
-                    <img class="card-img" src="./img/timeline/07-12-25.jpeg" alt="card image">
-                    <p class="card-title">Conversas Profundas 📩</p>
-                    <p class="card-info">📆 <i>Dezembro 07, 2025</i></p>
+                    <img class="card-img" src="./img/timeline/07-12-25.png" alt="card image">
+                    <p class="card-title font-center">Conversas Profundas 📩</p>
+                    <p class="card-info font-center">📆 <i>Dezembro 07, 2025</i></p>
                     <p class="card-info">
                         "Existe um momento em que a conversa deixa de ser apenas palavras e começa a ser presença. <br>
                         Foi aqui. <br>
@@ -214,9 +220,9 @@
 
                 <!-- 16/12/25 -->
                 <div class="card pointer">
-                    <img class="card-img" src="./img/timeline/16-12-25.jpeg" alt="card image">
-                    <p class="card-title">Segundo Encontro 💞</p>
-                    <p class="card-info">📆 <i>Dezembro 16, 2025</i></p>
+                    <img class="card-img" src="./img/timeline/16-12-25.png" alt="card image">
+                    <p class="card-title font-center">Segundo Encontro 💞</p>
+                    <p class="card-info font-center">📆 <i>Dezembro 16, 2025</i></p>
                     <p class="card-info">
                         "O segundo encontro carrega um encanto diferente. <br>
                         É como se o universo perguntasse em silêncio: <br>
@@ -229,9 +235,9 @@
 
                 <!-- 20/12/25 -->
                 <div class="card pointer">
-                    <img class="card-img" src="./img/timeline/20-12-25.jpeg" alt="card image">
-                    <p class="card-title">Conversas Intensas 💌</p>
-                    <p class="card-info">📆 <i>Dezembro 20, 2025</i></p>
+                    <img class="card-img" src="./img/timeline/20-12-25.png" alt="card image">
+                    <p class="card-title font-center">Conversas Intensas 💌</p>
+                    <p class="card-info font-center">📆 <i>Dezembro 20, 2025</i></p>
                     <p class="card-info">
                         "Quando as conversas ficaram intensas, o silêncio pediu licença. <br>
                         As mensagens ficaram mais longas, as respostas mais rápidas e o 'só mais um assunto' virou regra não escrita. <br>
@@ -242,9 +248,9 @@
 
                 <!-- 23/12/25 -->
                 <div class="card pointer">
-                    <img class="card-img" src="./img/timeline/23-12-25.jpeg" alt="card image">
-                    <p class="card-title">Terceiro Encontro 🎄</p>
-                    <p class="card-info">📆 <i>Dezembro 23, 2025</i></p>
+                    <img class="card-img" src="./img/timeline/23-12-25.png" alt="card image">
+                    <p class="card-title font-center">Encontro Natalino 🎄</p>
+                    <p class="card-info font-center">📆 <i>Dezembro 23, 2025</i></p>
                     <p class="card-info">
                         "O terceiro encontro veio com luzes acesas, corações aquecidos e aquele clima de fim de ano que deixa tudo mais suave. <br>
                         Entre sorrisos, conversas tranquilas e gestos simples, parecia que o Natal tinha nos colocado no mesmo ritmo, como se tudo ao redor estivesse conspirando a favor. <br>
@@ -254,9 +260,9 @@
 
                 <!-- 31/12/25 -->
                 <div class="card pointer">
-                    <img class="card-img" src="./img/timeline/31-12-25.jpeg" alt="card image">
-                    <p class="card-title">Virada de Ano 💫</p>
-                    <p class="card-info">📆 <i>Dezembro 31, 2025</i></p>
+                    <img class="card-img" src="./img/timeline/31-12-25.png" alt="card image">
+                    <p class="card-title font-center">Virada de Ano 💫</p>
+                    <p class="card-info font-center">📆 <i>Dezembro 31, 2025</i></p>
                     <p class="card-info">
                         "A virada do ano chegou marcando o fim de um ciclo e o começo de outro. <br>
                         Mesmo longe, não estávamos desconectados. <br>
@@ -267,9 +273,9 @@
                 </div>
 
                 <div class="card pointer" hidden>
-                    <img class="card-img" src="./img/assets/getStart.jpeg" alt="card image">
-                    <p class="card-title">O primeiro pedido 💍</p>
-                    <p class="card-info">📆 <i>Fevereiro 19, 2026</i></p>
+                    <img class="card-img" src="./img/" alt="card image">
+                    <p class="card-title font-center">O primeiro pedido 💍</p>
+                    <p class="card-info font-center">📆 <i>Março 19, 2026</i></p>
                     <p class="card-info">
                         "Chegamos até aqui. <br>
                         Cada detalhe, cada conversa, cada encontro e cada sorriso nos trouxe para este momento. <br>
@@ -285,10 +291,7 @@
             
             <h2 class="card-heading">Sobre a Nossa Música </h2>
             <div class="cards-container">
-                <div class="card pointer">
-                    <img class="card-img" src="./img/assets/cover.png" alt="card image">
-                </div>
-                <div class="card pointer">
+                <div class="card pointer" style="width: 80%;">
                     <p class="card-info">
                         Algumas histórias não têm ponto final — só vírgulas.
                         O que sentimos cresce, se transforma e se renova a cada dia, como se o tempo inteiro estivesse nos lembrando que ainda temos muito para viver juntos. <br>
@@ -299,7 +302,6 @@
                     </p>
                 </div>
                 <br>
-                
             </div>
             <p class="card-info" style="text-align: center;">
                 Mais precisamente:
@@ -388,44 +390,44 @@
             <h2 class="card-heading">Musicas Relacionadas</h2>
             <div class="cards-container nowrap">
                 <div class="card pointer">
-                    <img class="card-img" src="./img/musics/hotel-fazenda.jpeg" alt="card image">
-                    <p class="card-title">Final de Semana no Hotel Fazenda</p>
-                    <p class="card-info">Lovefy Studios</p>
+                    <img class="card-img" src="./img/musics/hotel-fazenda.png" alt="card image">
+                    <p class="card-title font-center">Final de Semana no Hotel Fazenda</p>
+                    <p class="card-info font-center">Lovefy Studios</p>
                 </div>
                 <div class="card pointer">
-                    <img class="card-img" src="./img/musics/cinema.jpeg" alt="card image">
-                    <p class="card-title">Cinema ao Ar Livre</p>
-                    <p class="card-info">Lovefy Studios</p>
+                    <img class="card-img" src="./img/musics/cinema.png" alt="card image">
+                    <p class="card-title font-center">Cinema ao Ar Livre</p>
+                    <p class="card-info font-center">Lovefy Studios</p>
                 </div>
                 <div class="card pointer">
-                    <img class="card-img" src="./img/musics/kart.jpeg" alt="card image">
-                    <p class="card-title">Corrida de Kart</p>
-                    <p class="card-info">Lovefy Studios</p>
+                    <img class="card-img" src="./img/musics/kart.png" alt="card image">
+                    <p class="card-title font-center">Corrida de Kart</p>
+                    <p class="card-info font-center">Lovefy Studios</p>
                 </div>
                 <div class="card pointer">
-                    <img class="card-img" src="./img/musics/pula-pula.jpeg" alt="card image">
-                    <p class="card-title">Role no Pula Pula</p>
-                    <p class="card-info">Lovefy Studios</p>
+                    <img class="card-img" src="./img/musics/pula-pula.png" alt="card image">
+                    <p class="card-title font-center">Role no Pula Pula</p>
+                    <p class="card-info font-center">Lovefy Studios</p>
                 </div>
                 <div class="card pointer">
-                    <img class="card-img" src="./img/musics/balao.jpeg" alt="card image">
-                    <p class="card-title">Passeio no Balão Mágico</p>
-                    <p class="card-info">Lovefy Studios</p>
+                    <img class="card-img" src="./img/musics/balao.png" alt="card image">
+                    <p class="card-title font-center">Passeio no Balão Mágico</p>
+                    <p class="card-info font-center">Lovefy Studios</p>
                 </div>
                 <div class="card pointer">
-                    <img class="card-img" src="./img/musics/gramado.jpeg" alt="card image">
-                    <p class="card-title">Inverno em Gramado</p>
-                    <p class="card-info">Lovefy Studios</p>
+                    <img class="card-img" src="./img/musics/gramado.png" alt="card image">
+                    <p class="card-title font-center">Inverno em Gramado</p>
+                    <p class="card-info font-center">Lovefy Studios</p>
                 </div>
                 <div class="card pointer">
-                    <img class="card-img" src="./img/musics/standup.jpeg" alt="card image">
-                    <p class="card-title">Show de Stand-Up</p>
-                    <p class="card-info">Lovefy Studios</p>
+                    <img class="card-img" src="./img/musics/standup.png" alt="card image">
+                    <p class="card-title font-center">Show de Stand-Up</p>
+                    <p class="card-info font-center">Lovefy Studios</p>
                 </div>
                 <div class="card pointer">
-                    <img class="card-img" src="./img/musics/holambra.jpeg" alt="card image">
-                    <p class="card-title">Primavera em Holambra</p>
-                    <p class="card-info">Lovefy Studios</p>
+                    <img class="card-img" src="./img/musics/holambra.png" alt="card image">
+                    <p class="card-title font-center">Primavera em Holambra</p>
+                    <p class="card-info font-center">Lovefy Studios</p>
                 </div>
             </div>
 
@@ -442,6 +444,7 @@
 
         </div>
 
+        <!--
         <div class="music-player" hidden>
 
             <div class="album">
@@ -486,7 +489,7 @@
                     <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </body>
 <script src="js/age.js"></script>

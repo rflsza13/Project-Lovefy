@@ -17,6 +17,30 @@ body {
     flex-wrap: wrap;
 }
 
+.logo-img {
+    width: 30x;
+    height: 30px;
+}
+
+.home {
+    padding: 5px 3.75px;
+}
+
+.search {
+    padding: 5px 5px;
+}
+
+.font-center{
+    text-align: center;
+}
+
+pss {
+    text-align: justify;
+    hyphens: auto;
+    word-spacing: -2px;
+    letter-spacing: -0.1px;
+}
+
 .times {
     display: flex;
     justify-content: center;
@@ -48,8 +72,8 @@ body {
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100px;
+    justify-content: space-evenly;
+    height: 150px;
     padding: 0.5rem 1.5rem;
     margin: 0.5rem;
 }
@@ -60,8 +84,9 @@ a {
 }
 
 .nav-option {
-    line-height: 2.9rem;
     opacity: 0.6;
+    display: flex;
+    align-items: center;
 }
 
 .nav-option i {
@@ -151,7 +176,7 @@ a {
 .main-content {
     background-color: #121212;
     flex: 1;
-    height: 87.5%;
+     /* height: 87.5%; */
     border-radius: 0.5rem;
     overflow: auto;
     margin-top: 0.5rem;
@@ -569,7 +594,7 @@ a {
 
     .cards-container {
         overflow-x: auto;
-        justify-content: normal;
+        justify-content: center;
     }
 
     .cards-container::-webkit-scrollbar {
@@ -592,7 +617,8 @@ a {
     }
 
     .nowrap {
-    flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
     }
 
     .card {
@@ -735,6 +761,18 @@ a {
 
     }
 
+    .logo {
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        height: 2rem;
+        width: 11rem;
+        background: #000;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        padding: 0.2rem;
+
+    }
 
     .left-part .hero i {
         font-size: 1.2rem;
@@ -745,4 +783,10 @@ a {
         margin-left: 6rem;
     }
 
+}
+
+@media screen and (max-width: 425px) {
+    .hide4 {
+        display: none;
+    }
 }
